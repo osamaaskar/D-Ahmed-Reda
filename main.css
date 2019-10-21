@@ -5,6 +5,7 @@
 }
 body {
    font-family: 'Cairo', sans-serif;
+   direction: rtl;
 }
 
 /*--------------------Start Global---------------*/
@@ -29,13 +30,7 @@ body {
 	max-width: 100px;
     max-height: 40px;
 }
-@media(max-width:991px){
-	.navbar .navbar-brand {
-		position: absolute;
-		right: 0;
-		top:0;
-	}
-}
+
 /*--------------------End NavBar  ---------------*/
 
 /*--------------------Start Header  ---------------*/
@@ -366,7 +361,7 @@ body {
 @media(max-width:768px){
 	.clincs .main .ch__3 .hed-child3{
 		top: -106px;
-		right: 60px;
+		right: 38px;
 		width: 100px;
 	}
 }
@@ -377,7 +372,7 @@ body {
 @media(max-width:768px){
 	.clincs .main .ch__4 .hed-child4{
 		top: -103px;
-		left: 60px;
+		left: 98px;
 		width: 100px
 	}
 }
@@ -388,7 +383,7 @@ body {
 }
 @media(max-width:768px){
 	.clincs .main .ch__5 .hed-child5{
-		right: 75px;
+		right: 50px;
 		width: 100px
 	}
 }
@@ -400,7 +395,7 @@ body {
 @media(max-width:768px){
 	.clincs .main .ch__6 .hed-child6{
 		top: -71px;
-		left: 80px;
+		left: 104px;
 		width: 97px;
 	}
 }
@@ -515,7 +510,6 @@ body {
 	text-align: right;
 	background-position: center;
 	background-size: cover;
-	text-align: left;
 }
 
 .drugs .test{
@@ -536,7 +530,7 @@ body {
 }
 .drugs li a{
 	font-size: 15px;
-    color: #fff;
+    color: #e0d3d3;
     text-decoration: none;
 	transition: all .5s ease-in-out;
 }
@@ -772,6 +766,7 @@ body {
 	
 }
 .ask .question{
+	text-align: right;
 	position: relative;
 }
 .ask .question h1{
@@ -794,7 +789,7 @@ body {
 .ask .question i{
 	position: absolute;
 	top: 0;
-	right:10px;
+	left:10px;
 }
 
 .ask .more-asks .askmore{
@@ -877,10 +872,8 @@ body {
 
 /*------------------Start Footer---------------*/
 .footer .social{
-	margin-top: 100px;
-}
-.footer .logo{
 	text-align: right;
+	margin-top: 100px;
 }
 
 @media(max-width:768px){
@@ -929,7 +922,6 @@ body {
 .footer .links ul li{
 	display: inline-block;
     margin-left: 15px;
-    color: #e0393b;
     transition: all .5s ease-in-out;
     font-size: 14px;
     cursor: pointer;
@@ -940,8 +932,14 @@ body {
     text-align: center;
 	
 }
-.footer .links ul li:hover{
+.footer .links ul li a{
+	 color: #e0393b;
+	text-decoration: none;
+}
+.footer .links ul li:hover {
 	background-color: #e0393b;
+}
+.footer .links ul li:hover a{
 	color:#fff;
 }
 @media(min-width:769px) and (max-width:991px){
@@ -1122,7 +1120,9 @@ body {
 .services .serv-photo .serv-img img{
 	width:100%;
 }
-
+.services .serv-content{
+	text-align: right;
+}
 .services .serv-content h2{
 	font-weight: bold;
 	font-size: 18px;
@@ -1208,7 +1208,7 @@ body {
 	background-color: #47e476;
 	border-color: #47e476;
 	box-shadow:  1px 4px 4px #d4d4d4;
-	float: right;
+	float: left;
 }
 .booking-form .call i{
 	margin-left: 7px;
@@ -1252,12 +1252,12 @@ body {
 	content: "";
     background: #e0393b;
     position: absolute;
-    width: 123px;
+    width: 113px;
     height: 2px;
     margin-right: auto !important;
     margin-left: auto !important;
     bottom: -8px;
-    left: -277px;
+    left: -294px;
     right: -300px;
     border-radius: 5px;
 	
@@ -1271,7 +1271,7 @@ body {
     margin-right: auto !important;
     margin-left: auto !important;
     bottom: -16px;
-    left: -226px;
+    left: -251px;
     right: -300px;
     border-radius: 5px
 	
@@ -1291,6 +1291,7 @@ body {
     text-align: left;
     outline: none;
     font-size: 15px;
+	text-align: right;
 	outline: none;
 	margin-bottom: 20px;
 }
@@ -1298,7 +1299,7 @@ body {
     content: '\02795'; /* character for "plus" sign (+) */
     font-size: 12px;
     color: #fff;
-    float: right;
+    float: left;
     margin-left: 5px;
 }
 
@@ -1317,6 +1318,7 @@ active, .collapsible:hover {
 }
 .content p{
 	font-size: 14px;
+	text-align: right;
 	color:#000;
 }
 @media(max-width:576px){
@@ -1363,7 +1365,7 @@ active, .collapsible:hover {
     margin-right: auto !important;
     margin-left: auto !important;
     bottom: -8px;
-    left: -335px;
+    left: -316px;
     right: -300px;
     border-radius: 5px;
 	
@@ -1377,7 +1379,7 @@ active, .collapsible:hover {
     margin-right: auto !important;
     margin-left: auto !important;
     bottom: -16px;
-    left: -290px;
+    left: -273px;
     right: -300px;
     border-radius: 5px
 	
@@ -1397,7 +1399,7 @@ active, .collapsible:hover {
 	display: inline-block;
 }
 .help-message .help-calling ul li:nth-child(1){
-	margin-right: 60px;
+	margin-left: 60px;
 }
 .help-message .help-calling ul li i{
 	margin-left: 7px;
@@ -1495,14 +1497,14 @@ active, .collapsible:hover {
 
 
 .markes h1{
-	
+	text-align: right;
 	font-weight: bold;
 	font-size: 38px;
 	color:#eb4343;
 	margin-bottom: 45px;
 }
 .markes .markes-info .marke-content{
-	
+	text-align: right;
 }
 .markes .markes-info .marke-content h3{
 	font-size: 18px;
@@ -1515,7 +1517,7 @@ active, .collapsible:hover {
 	
 }
 .markes .markes-info .marke-photo{
-	
+	text-align: right;
 	border:20px solid #eb4343;
 	box-shadow: 2px 3px 4px #bdb7b7;
 	margin-bottom: 15px;
@@ -1544,6 +1546,7 @@ active, .collapsible:hover {
 /*------------------End About page----------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------*/
 
+
 /*-----------------Start Single New----------------------------------------------------------------------------------*/
 
 .same-new{
@@ -1551,7 +1554,9 @@ active, .collapsible:hover {
 	padding-bottom: 40px;
 
 }
-
+.same-new .title-of-new{
+	text-align: right
+}
 .same-new .title-of-new h3{
 	margin-top: 40px;
 	font-size: 22px;
@@ -1567,23 +1572,26 @@ active, .collapsible:hover {
 .same-new .single-detail{
 	color:#777777;
 	font-size: 14px;
+	text-align: right;
 	line-height: 2.4;
 }
-
+.same-new .new-content{
+	text-align: right;
+}
 .same-new .new-content ul li{
 	display: inline-block;
 	margin-left: 22px;
 	font-size: 12px;
 }
 .same-new .new-content ul li i{
-	margin-right: 7px;
+	margin-left: 7px;
 }
 .same-new .new-content ul li:nth-child(1),
 .same-new .new-content ul li:nth-child(3){
 	color: #e0393b;
 }
 .same-new .new-content .views span{
-	text-align: right;
+	text-align: left;
 	display: block;
 	font-size: 12px;
 	color:#979797;
@@ -1592,6 +1600,7 @@ active, .collapsible:hover {
 .related{
 	padding: 50px 0px;
 	background-color: #eee;
+	text-align: right
 }
 .related .relat-one img{
 	width:100%;
