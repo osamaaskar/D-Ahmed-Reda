@@ -12,7 +12,6 @@ body {
 .section{
 	padding: 60px 0;
 }
-
 /*--------------------End Global---------------*/
 
 /*--------------------Start NavBar  ---------------*/
@@ -651,7 +650,10 @@ body {
 }
 .news-details .new-title h1{
 	font-size: 20px;
+}
+.news-details .new-title h1 a{
 	color:#E0393B;
+	text-decoration: none;
 }
 .news-details .new-title p{
 	font-size: 13px;
@@ -670,17 +672,14 @@ body {
     font-size: 15px;
 	color: #E0393B;
 	text-decoration: none;
-	
 	transition: all .5s ease-in-out;
+	font-weight: bold;
 }
 .news .more-news .more:hover{
 	background-color: #ed6162;
 	color:#000;
 
 }
-
-
-
 /*------------------End News---------------*/
 /*------------------Start Videos---------------*/
 .videos{
@@ -795,6 +794,7 @@ body {
 	position: absolute;
 	top: 0;
 	right:10px;
+	cursor: pointer;
 }
 
 .ask .more-asks .askmore{
@@ -810,6 +810,18 @@ body {
 	background-color: #fff;
 	color:#E0393B;
 
+}
+.testo{
+
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 5px;
+	display: none;
+	margin-bottom: 20px;
+	
+}
+.testo.act{
+	display: block;
 }
 /*-----------------End Ask---------------*/
 
@@ -907,6 +919,10 @@ body {
     margin-left: 15px;
     border-radius: 50%;
 	font-size: 20px;
+	cursor: pointer;
+	
+}
+.footer .social ul li a{
 	color:#fff;
 }
 
