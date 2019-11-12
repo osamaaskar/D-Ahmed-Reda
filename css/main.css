@@ -739,9 +739,18 @@ body {
 }
 .ask .question{
 	position: relative;
+transition: all .5s ease-in-out;
+}
+.ask .question:hover{
+	background-color: #e0393b;
+	color:#fff;
+	padding: 10px;
+}
+.ask .question:hover h1{
+	color:#fff;
 }
 .ask .question h1{
-	font-size: 20px;
+	font-size: 16px;
 	color: #303030;
 	cursor: pointer;
 }
@@ -765,7 +774,7 @@ body {
 	cursor: pointer;
 }
 .ask .more-asks{
-	margin-top: 30px;
+	margin-top: 50px;
 }
 .ask .more-asks .askmore{
 	background-color: #000;;
@@ -789,6 +798,7 @@ body {
 	border-radius: 5px;
 	display: none;
 	margin-bottom: 20px;
+color:#000;
 	
 }
 .testo.act{
