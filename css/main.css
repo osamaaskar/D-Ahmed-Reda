@@ -1661,3 +1661,23 @@ active, .collapsible:hover {
 }
 
 
+.Symptoms-details{
+	padding-top: 30px;
+}
+.Symptoms-details .Symptoms{
+	font-size: 20px;
+	font-weight: 600;
+	color:#e0393b;
+	margin-bottom: 20px;
+}
+.Symptoms-details ul li{
+	color: #777777;
+    font-size: 14px;
+    line-height: 2.4;
+}
+.Symptoms-details p{
+	color: #777777;
+    font-size: 14px;
+    line-height: 2.4;
+}
+
